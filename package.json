@@ -1,0 +1,44 @@
+{
+  "name": "diffron-cli",
+  "version": "0.0.1",
+  "description": "CLI to scaffold a Next.js + Prisma + Auth starter",
+  "main": "dist/index.js",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "bin": {
+    "create-diffron-app": "dist/index.js"
+  },
+  "files": [
+    "dist",
+    "template"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "prepack": "npm run build",
+    "dev": "node dist/index.js",
+    "types:check": "tsc --noEmit"
+  },
+  "keywords": [
+    "nextjs",
+    "boilerplate",
+    "starter",
+    "template",
+    "prisma",
+    "reactjs",
+    "authjs",
+    "rbac"
+  ],
+  "author": "melih kurukavak",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/node": "^25.3.1",
+    "@types/prompts": "^2.4.9",
+    "tsup": "^8.5.1",
+    "typescript": "^5.9.3"
+  },
+  "dependencies": {
+    "prompts": "^2.4.2"
+  }
+}
