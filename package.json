@@ -12,7 +12,8 @@
   },
   "files": [
     "dist",
-    "template"
+    "src/base",
+    "src/features"
   ],
   "scripts": {
     "build": "tsup",
